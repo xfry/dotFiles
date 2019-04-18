@@ -124,4 +124,5 @@
 (global-set-key (kbd "<C-down>") 'enlarge-window)
 (global-set-key (kbd "<C-left>") 'shrink-window-horizontally)
 (global-set-key (kbd "<C-right>") 'enlarge-window-horizontally)
-
+;; fix bug with keybindings of iedit
+(define-key global-map (kbd "C-c ;") 'iedit-mode)
