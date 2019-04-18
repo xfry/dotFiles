@@ -62,6 +62,9 @@
 (global-linum-mode t)
 ;; Display line number wider
 (setq linum-format "%3d\u2502 ")
+;; set default style for c code
+(setq c-default-style "linux"
+          c-basic-offset 4)
 ;; Set line tabs
 (setq c-basic-offset 8
       tab-width 8)
@@ -121,3 +124,4 @@
 (global-set-key (kbd "<C-down>") 'enlarge-window)
 (global-set-key (kbd "<C-left>") 'shrink-window-horizontally)
 (global-set-key (kbd "<C-right>") 'enlarge-window-horizontally)
+
